@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.minehunt.MineHuntFragment"
+    android:background="@drawable/sfondo"
+    >
+
+    <TextView
+        android:id="@+id/state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/pixeloid"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.example.minehunt.fragments.minehunt.GridView
+        android:id="@+id/gridv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0px"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40sp" />
+
+    <LinearLayout
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:orientation="horizontal"
+        android:paddingBottom="3sp"
+        android:gravity = "bottom"
+        android:id="@+id/buttons">
+
+        <Spinner
+            android:id="@+id/difficulty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="6sp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="6sp"
+            android:layout_weight="1"
+            android:autoSizeTextType="uniform"
+            android:background="#52F6F6F6"
+            android:entries="@array/difficulty"
+            android:fontFamily="@font/pixeloid"
+            android:maxLines="1"
+            android:spinnerMode="dialog"
+            android:textColor="#FFFFFF" />
+
+        <Spinner
+            android:id="@+id/size"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="6sp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="6sp"
+            android:layout_weight="1"
+            android:autoSizeTextType="uniform"
+            android:background="#52F6F6F6"
+            android:entries="@array/size"
+            android:fontFamily="@font/pixeloid"
+            android:maxLines="1"
+            android:spinnerMode="dialog"
+            android:textColor="#FFFFFF" />
+
+
+        <EditText
+            android:maxLength="10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="0sp"
+            android:layout_marginBottom="0sp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:text="@string/newplayer"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/pixeloid"
+            android:textSize="13sp"
+            android:maxLines="1"
+            android:theme="@style/Widget.Material3.BottomAppBar"
+            android:id="@+id/name"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="0sp"
+            android:layout_marginBottom="0sp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:text="Play"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/pixeloid"
+            android:autoSizeTextType="uniform"
+            android:maxLines="1"
+            android:theme="@style/Widget.Material3.BottomAppBar"
+            android:id="@+id/start"
+            />
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
