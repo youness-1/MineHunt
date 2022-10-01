@@ -2,8 +2,10 @@
 Android Game
 Minehunt is a game based on a battlefield grid.
 The player is in a cave and has to find the exit avoiding the hidden mines.
+You can select the difficulty, the size of the map and you can edit your name.
+When the game starts you can move in 4 different directions with a swipe (left, right, top, bottom) 
 
-Everytime a block is mined an item can be revealed:
+Every time a block is mined an item can be revealed:
 - mine: removes one lifepoint or the shield if it's present
 - heart: restores 1 lifepoint (max 3)
 - shield: protects from 1 explosion (max 1)
