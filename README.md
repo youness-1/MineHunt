@@ -18,3 +18,5 @@ There are 3 game modes:
 - Hard: you start with 3 lifepoints, each coin gives you 3 scores, there are more mines than the "Normal" mode
 
 You can unlock more skins with the score points in the skin selector section.
+
+A demo can be tested with the precompiled APK file.
