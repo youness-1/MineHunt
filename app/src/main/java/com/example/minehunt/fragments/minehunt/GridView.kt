@@ -110,7 +110,7 @@ class GridView(context: Context, attributeSet: AttributeSet): View(context, attr
         }
         for(i in grid.indices) {
             for(j in grid[i].indices){
-                paint.style = Paint.Style.STROKE; paint.setARGB(255,0,0,0)
+                paint.style = Paint.Style.STROKE; paint.setARGB(0,0,0,0)
                 canvas?.drawRect(coords.left(j.toFloat()),coords.top(i.toFloat()),coords.right(j.toFloat()), coords.bottom(i.toFloat()), paint)
                 when(grid[i][j].type){
                     TileType.MINED -> {
